@@ -8,4 +8,5 @@ set expandtab
 filetype plugin indent on
 syntax enable
 
-noremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
+" # below snippet takes skeleton html file and then <CR>=carriage return, 2j=2 lines down, 3w=end of (<title>),dw=delete word(have title in title bracket of skeleton file), i=insert 
+noremap ,html :-1read $HOME/.vim/.skeleton.html<CR>2j3wldwi
