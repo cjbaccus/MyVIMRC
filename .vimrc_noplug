@@ -7,3 +7,5 @@ set softtabstop=2
 set expandtab
 filetype plugin indent on
 syntax enable
+
+noremap ,html :-1read $HOME/.vim/.skeleton.html<CR>3jwf>a
