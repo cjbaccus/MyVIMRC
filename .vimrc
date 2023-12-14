@@ -2,10 +2,11 @@ set ttyfast
 set showmode
 set showcmd
 set title
-set number
 set hidden
 set tabstop=2
 set softtabstop=2
+set relativenumber
+set mouse=a
 " This is what files look like
 set ffs=unix,dos,mac
 " Update find path to search subdirectories
@@ -27,6 +28,8 @@ set wildignore+=*.swp,~*
 " Archives
 set wildignore+=*.zip,*.tar
 
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 set t_Co=256
 
 call plug#begin('/home/cjbaccus/.vim/plugins')
@@ -39,6 +42,5 @@ Plug 'https://github.com/rafi/awesome-vim-colorschemes' "Retro Scheme
 
 call plug#end()
 
-:set relativenumber
-:set autoindent
-:set mouse=a
+
+
